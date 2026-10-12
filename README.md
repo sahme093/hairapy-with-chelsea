@@ -15,12 +15,12 @@ Everything that changes per salon lives in **one file**: [`src/salon.config.js`]
    cd <new-repo>
    npm install
    ```
-3. Edit **`src/salon.config.js`**: name, logo letter, headline, phone, address, hours,
+3. Edit **`src/salon.config.js`**: name, headline, phone, address, hours,
    services, reviews, colors and page title. Every field has a comment explaining it.
 4. Add the salon's photos to **`public/img/`** and update the paths in the config
    (`images` and `gallery.items`). Delete the placeholder `.svg` files you replaced.
    Portrait photos work best (roughly 3:4 or taller).
-5. Preview with `npm run dev`. Restart it after changing `name`, `logoLetter`, `seo` or
+5. Preview with `npm run dev`. Restart it after changing `name`, `seo` or
    `theme` so the browser tab title, icon and colors refresh.
 6. Commit and push.
 

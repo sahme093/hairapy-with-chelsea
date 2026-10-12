@@ -1,9 +1,10 @@
 import salon from '../salon.config.js';
+import Logo from './Logo.jsx';
 
 export default function Header() {
   return (
     <header className="site-header">
-      <a href="#top" className="brand">{salon.name}</a>
+      <Logo />
       <nav className="site-nav desktop-only" aria-label="Main">
         <a href="#services">Services</a>
         <a href="#work">Our work</a>

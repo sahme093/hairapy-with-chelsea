@@ -9,9 +9,9 @@ export default function Services() {
           <p className="desktop-only">{salon.services.note}</p>
         </div>
         <div className="service-groups">
-          {salon.services.groups.map((grp) => (
-            <div key={grp.name} className="service-group">
-              <div className="label service-group-name">{grp.name}</div>
+          {salon.services.groups.map((grp, i) => (
+            <div key={i} className="service-group">
+              {grp.name && <div className="label service-group-name">{grp.name}</div>}
               <ul className="service-list">
                 {grp.items.map((s) => (
                   <li key={s}>{s}</li>
